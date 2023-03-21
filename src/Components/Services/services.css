@@ -1,0 +1,16 @@
+.service{
+    margin-left: 14rem;
+    width:50rem;
+    border:1.5px solid paleturquoise;
+    border-radius: 2rem;
+    height:300px;
+    background-color:var(--color-bg-variant);
+}
+.service:hover{
+    background-color: var(--color);
+    transition:  all ease 400ms;
+}
+.iconss{
+    color:papayawhip;
+}
+

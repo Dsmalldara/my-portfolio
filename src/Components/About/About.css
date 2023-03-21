@@ -1,0 +1,149 @@
+#about{
+    height:100%;
+    margin:1px;
+}
+
+.about__info{
+    display: flex;
+    flex-direction: column;
+    gap: 10em;
+}
+.about__container{
+    display:grid;
+    grid-template-columns: 35% 50%;
+    gap:5%;
+}
+.about__me{
+    transform: scale(0.7);
+    padding: 1px !important;
+    border-radius: 2rem;
+    background: linear-gradient(45deg,
+    transparent,
+    var(--color-primary),
+    transparent);
+
+    
+    margin-left: 3em ;
+    
+}
+.abt{   
+    border-radius: 2rem;
+    overflow: hidden;
+    transform: rotate(10deg);
+    transition:var(--transition) ;
+}
+.abt:hover{
+    transform: rotate(0deg);
+}
+.about__card{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 110%;
+  height: 20vh;
+  margin-bottom: 0.1rem;
+  gap:1rem;
+  color: antiquewhite;
+}
+
+.about__cards{
+    background: var(--color-bg-variant);
+    border: 3px solid transparent;
+    border-radius: 1rem;
+    text-align: center;
+    max-width: 100%;
+    min-width: 100%;
+}
+.about__cards:hover{
+    background: transparent;
+    border-color: var(--color-primary);
+    transition: all 400ms ease;
+    cursor: default;
+}
+
+.icon{
+    color:aquamarine;
+    font-size: 1.5rem;
+    margin-top:0.2rem;
+}
+.about__cards h5{
+    font-size:1.25em;
+    font-weight: bolder;
+} 
+
+.about__cards h2{
+    font-size: 1em;
+    color:var(--color-light);
+}
+.p__about{
+    margin:0.7rem;
+    margin-top:0.1rem;
+    color:darkgray;
+    font-size: 1.5rem;
+
+}
+.btnabout{
+    margin-top: 1.3rem;
+    margin-left: 44% ;
+    font-size:1.5rem;
+    margin-top: 60px;
+}
+@media screen and (max-width:1024px) {
+    #about{
+        width:90%;
+    }
+    .about__container{
+        grid-template-columns: 1fr 1fr;
+        gap:0;  
+    }
+    .about__me{
+        transform: scale(0.8);
+        padding: 1px !important;
+        border-radius: 2rem;
+        margin:1.8rem;
+        margin-left:1.5rem;
+        height:42.5%;
+        background: linear-gradient(45deg,
+        transparent,
+        var(--color-primary),
+        transparent);
+    
+    }
+  
+    
+    }
+    @media screen  and (max-width:600px){
+        .about__container{
+            gap:0;
+            width:30%;
+            grid-template-columns: 1fr 1fr;
+            margin-left:2rem
+        }
+       .heading{
+        margin-left: 50%;
+        margin-top:0.5em;
+        transform: translate(-20%);
+        margin-bottom: 50px; 
+    }
+    .heading h5{
+        color:var(--color-primary)
+
+    }
+        .about__me{
+            display: none;
+        }
+    .about__me{
+        width:60%;
+        gap:0;
+        margin:0.8rem 0;
+    }
+    .btnabout{
+        margin-left:50%;
+        transform: translate(-30%);
+    }
+    }
+    .about__cards{
+        margin-left: -0.5em;
+        margin-top:5em;
+        width:6rem;
+    }
+    
